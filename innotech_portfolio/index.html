@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subnautica PDA — Dive Log</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Font: Days One -->
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo.jpg" alt="Alterra logo" width="100" height="80" class="me-2">
+          <span class="fw-bold">Subnautica PDA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#Dive Log">Dive Log</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Vehicles">Vehicles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Leviathans">Leviathans</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Signal">Signal</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="Dive Log" class="hero-section text-white d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Exploring the Unknown Depths</h1>
+          <p class="lead mb-4">Survive, build, and thrive beneath the waves of an alien ocean world.</p>
+          <a href="#Vehicles" class="btn btn-lg btn-outline-light me-2">Schematics from Aurora</a>
+          <a href="#Leviathans" class="btn btn-lg btn-light">Discoveries</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEHICLES -->
+<section id="Vehicles" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="h1">Vehicles</h2>
+      <p class="text-muted">Engineered for exploration, survival, and deep-sea travel.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Seamoth -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/seamoth.jpeg" class="card-img-top" alt="Seamoth Submarine">
+          <div class="card-body">
+            <h5 class="card-title">Seamoth</h5>
+            <p class="card-text">A fast, one-person submersible with modular upgrades for versatile exploration.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prawn Suit -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/prawnsuit.jpeg" class="card-img-top" alt="Prawn Suit">
+          <div class="card-body">
+            <h5 class="card-title">Prawn Suit</h5>
+            <p class="card-text">A heavy-duty mech designed for deep-sea mining, combat, and extreme environments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cyclops -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/cyclopes.jpeg" class="card-img-top" alt="Cyclops Submarine">
+          <div class="card-body">
+            <h5 class="card-title">Cyclops</h5>
+            <p class="card-text">A massive, crew-operated submarine capable of deep dives and carrying smaller vehicles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- LEVIATHANS -->
+  <section id="Leviathans" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="h1">Leviathans Discovered</h2>
+        <p class="text-muted">Research logs of massive lifeforms encountered in the planet 4546B's oceans.</p>
+      </div>
+          <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal"
+          data-bs-img="img/reaper.jpg" data-bs-title="Reaper Leviathan"
+          class="Leviathans-item d-block position-relative">
+          <img src="img/reaper.jpeg" alt="Reaper Leviathan" class="img-fluid rounded">
+          <div class="Leviathans-caption">Reaper Leviathan</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal"
+          data-bs-img="img/ghost.jpg" data-bs-title="Ghost Leviathan"
+          class="Leviathans-item d-block position-relative">
+          <img src="img/ghost.jpeg" alt="Ghost Leviathan" class="img-fluid rounded">
+          <div class="Leviathans-caption">Ghost Leviathan</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal"
+          data-bs-img="img/sea-dragon.jpg" data-bs-title="Sea Dragon Leviathan"
+          class="Leviathans-item d-block position-relative">
+          <img src="img/seadragon.jpeg" alt="Sea Dragon Leviathan" class="img-fluid rounded">
+          <div class="Leviathans-caption">Sea Dragon</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal"
+          data-bs-img="img/sea-emperor.jpg" data-bs-title="Sea Emperor Leviathan"
+          class="Leviathans-item d-block position-relative">
+          <img src="img/seaemperor.jpg" alt="Sea Emperor Leviathan" class="img-fluid rounded">
+          <div class="Leviathans-caption">Sea Emperor</div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Leviathan Detail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" alt="" id="projectModalImage" class="img-fluid rounded mb-3">
+          <p id="projectModalDescription" class="text-muted">Leviathans Details:</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIGNAL -->
+  <section id="Signal" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="h1">Send a Signal</h2>
+        <p class="text-muted">Need assistance? Transmit your message — the PDA will log your signal.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="SignalForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Diver ID</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+              <div class="invalid-feedback">Please enter your ID.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Comms Frequency</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <div class="invalid-feedback">Please enter a valid frequency.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Signal Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              <div class="invalid-feedback">Please enter your signal.</div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">Transmission will be logged in Alterra’s PDA system.</small>
+              <button type="submit" class="btn btn-primary">Transmit</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="#" class="text-white me-3" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+      <small class="d-block mb-1">© 2221 Alterra Corporation. All rights reserved.</small>
+      <small class="text-muted">Made with titanium, glass, and a little bit of kelp.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const projectModal = document.getElementById('projectModal');
+    projectModal.addEventListener('show.bs.modal', function (event) {
+      const trigger = event.relatedTarget;
+      const imgSrc = trigger.getAttribute('data-bs-img');
+      const title = trigger.getAttribute('data-bs-title');
+      document.querySelector('#projectModal .modal-title').textContent = title;
+      const imgEl = document.getElementById('projectModalImage');
+      imgEl.src = imgSrc;
+      imgEl.alt = title + ' blueprint';
+    });
+  </script>
+
+</body>
+</html>

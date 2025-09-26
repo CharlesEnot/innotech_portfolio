@@ -1,0 +1,131 @@
+
+/* Override Bootstrap muted text */
+.text-muted {
+  color: #ffffff !important;  /* pure white */
+  opacity: 1 !important;      /* no fading */
+}
+
+a, button, .btn, .card, .Leviathans-item img, .navbar .nav-link {
+  transition: all 0.3s ease-in-out;
+}
+/* Global font */
+body {
+  font-family: 'Days One', sans-serif;
+}
+
+/* Variables for ocean palette */
+:root {
+  --deep-ocean: #001f33;
+  --dark-water: #000814;
+  --neon-blue: #00e0ff;
+  --aqua-glow: #0dcaf0;
+  --sand: #f4f1e1;
+}
+
+/* HERO */
+.hero-section {
+  background: linear-gradient(135deg, rgba(0,31,51,0.9), rgba(0,8,20,0.9)),
+              url('../img/hero.jpg') center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: var(--sand);
+  text-shadow: 0 0 10px rgba(0,224,255,0.7);
+}
+.hero-section h1 {
+  color: var(--neon-blue);
+  text-shadow: 0 0 15px rgba(0,224,255,0.8);
+}
+.hero-section .btn {
+  border-radius: 50px;
+  border: 2px solid var(--neon-blue);
+  background: transparent;
+  color: var(--neon-blue);
+  transition: all 0.3s ease;
+}
+.hero-section .btn:hover {
+  background: var(--neon-blue);
+  color: #000;
+  box-shadow: 0 0 15px var(--neon-blue);
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgb(0, 0, 0) !important;
+}
+.navbar .nav-link {
+  color: var(--sand) !important;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: var(--neon-blue) !important;
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+.navbar-brand span {
+  color: var(--neon-blue);
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+
+/* Vehicles */
+#Vehicles {
+  background: linear-gradient(180deg, #001f33 0%, #000814 100%);
+  color: var(--sand);
+}
+.card {
+  background: rgba(0, 31, 51, 0.85);
+  border: 1px solid rgba(0,224,255,0.2);
+  color: var(--sand);
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 25px rgba(0,224,255,0.3);
+}
+
+/* Leviathans */
+#Leviathans {
+  background: linear-gradient(120deg, #000814, #001f33);
+  position: relative;
+}
+.Leviathans-item img {
+  border: 2px solid rgba(0,224,255,0.2);
+}
+.Leviathans-item::after {
+  background: rgba(0,31,51,0.75);
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+
+/* Signal */
+#Signal {
+  background: linear-gradient(135deg, rgba(0,8,20,0.95), rgba(0,31,51,0.9)),
+              url('../img/signal.jpg') center/cover no-repeat;
+}
+#Signal form {
+  background: rgba(0, 31, 51, 0.4); /* much more transparent */
+  border: 1px solid rgba(0,224,255,0.3);
+  color: var(--sand);
+  backdrop-filter: blur(6px); /* glass-like effect */
+  border-radius: 12px;
+}
+#Signal label {
+  color: var(--aqua-glow);
+}
+#Signal .btn {
+  background: var(--neon-blue);
+  color: #000;
+  border-radius: 50px;
+  box-shadow: 0 0 10px var(--neon-blue);
+}
+#Signal .btn:hover {
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(135deg, #000814, #001f33);
+  color: var(--sand);
+}
+footer .bi:hover {
+  transform: scale(1.3);
+  color: var(--neon-blue);
+  text-shadow: 0 0 12px var(--neon-blue);
+}
